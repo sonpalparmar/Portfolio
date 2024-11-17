@@ -1,0 +1,7 @@
+.App {
+    padding-top: 80px; /* Adjust this value based on your header height */
+  }
+  
+#home, #about, #portfolio, #contact {
+    scroll-margin-top: 80px; /* Adjust this value based on your header height */
+}

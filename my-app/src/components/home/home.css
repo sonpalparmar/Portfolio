@@ -1,0 +1,65 @@
+/* about.css */
+.about-container {
+    min-height: calc(100vh - 200px);
+    padding: 80px 20px;
+  }
+  
+  .about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-title {
+    font-size: 48px;
+    color: #e6dddd;
+    margin-bottom: 16px;
+  }
+  .about-title span{
+    color: #FFD26E;
+    font-size: 60px;
+  }
+  
+  .about-subtitle {
+    font-size: 30px;
+    color: #e6dddd;
+    margin-bottom: 24px;
+  }
+  
+  .about-description {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #ACACAD;
+    margin-bottom: 32px;
+  }
+  
+  .about-image {
+    flex: 1;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .connect-btn {
+    padding: 12px 32px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .connect-btn:hover {
+    background-color: #0056b3;
+  }
+  

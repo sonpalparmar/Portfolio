@@ -1,0 +1,569 @@
+/* Portfolio Container */
+.portfolio-container {
+    padding: 5rem 1.25rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Section Headers */
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  
+  .section-title-icon {
+    color: #3b82f6;
+    animation: bounce 2s infinite;
+  }
+  
+  .section-underline {
+    width: 6rem;
+    height: 0.25rem;
+    background: linear-gradient(to right, #3b82f6, #2563eb);
+    margin: 0 auto;
+    border-radius: 9999px;
+  }
+  
+  /* Experience Section */
+  .experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .experience-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .experience-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience-icon {
+    color: #3b82f6;
+    background-color: #eff6ff;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    height: fit-content;
+  }
+  
+  .experience-content {
+    flex: 1;
+  }
+  
+  .experience-role {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+  }
+  
+  .experience-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #4b5563;
+    font-size: 0.875rem;
+  }
+  
+  .experience-details span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .experience-description {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .experience-description li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #4b5563;
+  }
+  
+  .experience-description li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #3b82f6;
+  }
+  
+  /* Projects Grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Project Card */
+  .project-card-wrapper {
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+  
+  .project-card-wrapper:hover {
+    transform: translateY(-0.5rem);
+  }
+  
+  .project-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Project Header */
+  .project-header {
+    height: 12rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gradient-ai {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+  }
+  
+  .gradient-database {
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  }
+  
+  .gradient-web {
+    background: linear-gradient(135deg, #22c55e, #14b8a6);
+  }
+  
+  /* Shimmer Effect */
+  .shimmer-wrapper {
+    position: absolute;
+    inset: 0;
+    opacity: 0.2;
+  }
+  
+  .shimmer-effect {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      40deg,
+      transparent 25%,
+      rgba(255, 255, 255, 0.2) 50%,
+      transparent 75%
+    );
+    animation: shimmer 2s infinite;
+  }
+  
+  /* Project Icons */
+  .project-icon-wrapper {
+    position: relative;
+    z-index: 10;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover .project-icon-wrapper {
+    transform: scale(1.1);
+  }
+  
+  .header-icon {
+    color: white;
+  }
+  
+  .decoration-icon {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.4);
+    animation: pulse 2s infinite;
+  }
+  
+  .decoration-top-right {
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .decoration-bottom-left {
+    bottom: 1rem;
+    left: 1rem;
+    animation-delay: 0.5s;
+  }
+  
+  /* Project Content */
+  .project-content {
+    padding: 1.5rem;
+  }
+  
+  .project-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  .project-title-icon {
+    color: #3b82f6;
+    animation: float 3s infinite;
+  }
+  
+  .project-description {
+    color: #4b5563;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* Tech Stack */
+  .tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-tag {
+    background: #f3f4f6;
+    color: #3b82f6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+  }
+  
+  .tech-tag:hover {
+    background: #3b82f6;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  /* Project Links */
+  .project-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .project-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4b5563;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .project-link:hover {
+    color: #3b82f6;
+    transform: translateY(-2px);
+  }
+  
+  .project-link span {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  /* Animations */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
+  }
+  
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Fade In Animation for Cards */
+  .project-card {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Staggered Animation for Multiple Cards */
+  .projects-grid > div:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .projects-grid > div:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+ /* Continuing from previous CSS */
+
+.projects-grid > div:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .portfolio-container {
+      padding: 3rem 1rem;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .project-header {
+      height: 10rem;
+    }
+  
+    .experience-card {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .experience-icon {
+      align-self: flex-start;
+    }
+  
+    .experience-details {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .project-description {
+      -webkit-line-clamp: 4;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.75rem;
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .tech-stack {
+      gap: 0.25rem;
+    }
+  
+    .tech-tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+    }
+  
+    .project-links {
+      justify-content: space-around;
+    }
+  }
+  
+  /* Hover Effects Enhancement */
+  .project-card:hover .project-header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.1);
+    animation: pulse 2s infinite;
+  }
+  
+  /* Additional Animation for Links */
+  .project-link:hover svg {
+    animation: wiggle 0.3s ease-in-out;
+  }
+  
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+  }
+  
+  /* Focus States for Accessibility */
+  .project-link:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  
+  .tech-tag:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+  }
+  
+  /* Print Styles */
+  @media print {
+    .portfolio-container {
+      padding: 0;
+    }
+  
+    .project-card {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+  
+    .project-header {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  
+    .shimmer-wrapper,
+    .decoration-icon,
+    .project-title-icon {
+      display: none;
+    }
+  
+    .section-underline {
+      border-bottom: 2px solid #3b82f6;
+      background: none;
+    }
+  }
+  
+  /* Loading State Animations */
+  @keyframes cardSkeleton {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  .project-card.loading {
+    background: linear-gradient(90deg, 
+      #f3f4f6 25%, 
+      #e5e7eb 50%, 
+      #f3f4f6 75%
+    );
+    background-size: 200% 100%;
+    animation: cardSkeleton 1.5s infinite;
+  }
+  
+  /* Dark Mode Support */
+  @media (prefers-color-scheme: dark) {
+    .project-card {
+      background: #1f2937;
+    }
+  
+    .project-title {
+      color: #f3f4f6;
+    }
+  
+    .project-description {
+      color: #d1d5db;
+    }
+  
+    .tech-tag {
+      background: #374151;
+      color: #60a5fa;
+    }
+  
+    .tech-tag:hover {
+      background: #60a5fa;
+      color: #1f2937;
+    }
+  
+    .project-link {
+      color: #d1d5db;
+    }
+  
+    .project-link:hover {
+      color: #60a5fa;
+    }
+  
+    .experience-card {
+      background: #1f2937;
+    }
+  
+    .experience-role {
+      color: #f3f4f6;
+    }
+  
+    .experience-description li {
+      color: #d1d5db;
+    }
+  }
+  
+  /* High Contrast Mode */
+  @media (forced-colors: active) {
+    .project-card {
+      border: 2px solid CanvasText;
+    }
+  
+    .tech-tag {
+      border: 1px solid CanvasText;
+    }
+  
+    .section-underline {
+      background: CanvasText;
+    }
+  }
