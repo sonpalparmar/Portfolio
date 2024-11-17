@@ -76,7 +76,7 @@ const Contact = () => {
           </div>
 
           <div className="social-container">
-            <h3 className="social-title">Connect With Me</h3>
+            {/* <h3 className="social-title">Connect With Me</h3> */}
             <div className="social-links">
               <a href="https://github.com/sonpalparmar" className="social-link github" aria-label="Github">
                 <Github size={20} />
@@ -86,7 +86,7 @@ const Contact = () => {
                 <Linkedin size={20} />
                 <span className="social-label">LinkedIn</span>
               </a>
-              <a href="https://twitter.com/sonpalparmar" className="social-link twitter" aria-label="Twitter">
+              <a href="https://twitter.com/parmarsonpal" className="social-link twitter" aria-label="Twitter">
                 <Twitter size={20} />
                 <span className="social-label">Twitter</span>
               </a>
