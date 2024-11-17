@@ -11,6 +11,11 @@
     gap: 60px;
     align-items: center;
   }
+  @media (max-width:1320px){
+    .about-content{
+      max-width: 900px;
+    }
+  }
   
   .about-text {
     flex: 1;
@@ -47,7 +52,14 @@
     width: 100%;
     height: auto;
   }
-  
+  @media (max-width: 1023px){
+    .about-content{
+      display: block;
+    }
+    .profile-image{
+      display: none;
+    }
+  }
   .connect-btn {
     padding: 12px 32px;
     font-size: 18px;

@@ -17,7 +17,11 @@
   animation: fadeIn 1s ease-out;
   width: 100%;
 }
-
+@media (max-width:1320px){
+  .contact-content{
+    max-width: 900px;
+  }
+}
 /* Contact Info Section */
 .contact-info {
   display: flex;

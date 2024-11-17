@@ -4,7 +4,11 @@
     max-width: 1200px;
     margin: 0 auto;
   }
-  
+  @media (max-width:1320px){
+    .portfolio-container{
+      max-width: 900px;
+    }
+  }
   /* Section Headers */
   .section-header {
     text-align: center;

@@ -169,7 +169,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-
-
-// hello
