@@ -186,7 +186,7 @@
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .form-wrapper {
@@ -438,9 +438,9 @@
   .form-wrapper {
     padding: 0;
   }
-  .form-container{
+  /* .form-container{
     padding: 10px;
-  }
+  } */
   .form-body{
     padding: 24px;
   }
