@@ -17,7 +17,7 @@ const Skills = () => {
     {
       category: "Programming",
       icon: <Code2 size={32} />,
-      items: ["Python", "JavaScript", "SQL"],
+      items: ["Python", "C++", "SQL"],
       color: "#4C51BF"
     },
     {
@@ -35,7 +35,7 @@ const Skills = () => {
     {
       category: "Web Development",
       icon: <Globe size={32} />,
-      items: ["Flask", "Django", "React"],
+      items: ["FastAPI", "Flask", "React"],
       color: "#2F855A"
     },
     {
